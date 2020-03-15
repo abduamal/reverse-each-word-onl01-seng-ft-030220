@@ -1,4 +1,4 @@
-def reverse_each_word(string)
+def reverse_each_word_with_each(string)
   nustring = string.split(" ")
   reversed = []
   
