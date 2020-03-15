@@ -13,10 +13,10 @@ end
 def reverse_each_word(sentence)
   
   nustring = string.split(" ")
-  array = []
+  nuarray = []
   
-  nustring.collect do |phrase|
+  nuarray = nustring.collect do |phrase|
     phrase.reverse.join(" ")
   end
-  
+  return nuarray
 end
