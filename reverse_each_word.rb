@@ -10,9 +10,10 @@ def reverse_each_word(string)
   
 end
 
-def reversed_each_word(string)
+def reverse_each_word(sentence)
   
   nustring = string.split(" ")
+  array = []
   
   nustring.collect do |phrase|
     phrase.reverse.join(" ")
