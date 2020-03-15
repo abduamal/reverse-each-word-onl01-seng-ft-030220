@@ -13,9 +13,9 @@ end
 def reversed_each_word(string)
   
   nustring = string.split(" ")
-  reversed = []
-  reversed = nustring.collect { |phrase| phrase.reverse}
   
-  return reversed.join(" ")
+  nustring.collect do |phrase|
+    phrase.reverse.join(" ")
+  end
   
 end
