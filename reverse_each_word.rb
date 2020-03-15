@@ -15,8 +15,7 @@ def reverse_each_word(sentence)
   nustring = string.split(" ")
   nuarray = []
   
-  nuarray = nustring.collect do |phrase|
-    phrase.reverse.join(" ")
+  nuarray = nustring.collect {|phrase| phrase.reverse}
   end
-  return nuarray
+  return nuarray.join(" ")
 end
